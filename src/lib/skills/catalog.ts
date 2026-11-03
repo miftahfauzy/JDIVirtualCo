@@ -3,7 +3,14 @@ import type {
   SkillStatusEntry,
 } from "@/lib/skills/types";
 
-export type PackagedSkillId = "soundhermes" | "task-manager" | "todo-board";
+export type PackagedSkillId =
+  | "ceo-agent"
+  | "gara-general-affairs"
+  | "fina-finance"
+  | "sara-sales"
+  | "soundhermes"
+  | "task-manager"
+  | "todo-board";
 
 export type PackagedSkillDefinition = {
   packageId: PackagedSkillId;
@@ -51,6 +58,46 @@ const PACKAGED_SKILLS: PackagedSkillDefinition[] = [
     installSource: "hermes-workspace",
     creatorName: "iamlukethedev",
     creatorUrl: "https://github.com/iamlukethedev",
+  },
+  {
+    packageId: "ceo-agent",
+    skillKey: "ceo-agent",
+    name: "ceo-agent",
+    description:
+      "Run the GENIO AI virtual company as its CEO Agent: daily digest, weekly review, KPI, proposals, board, crisis, escalation, roadmap and budget control.",
+    installSource: "hermes-workspace",
+    creatorName: "Miftah Fauzy",
+    creatorUrl: "mailto:miftah.fauzy@genioai.id",
+  },
+  {
+    packageId: "gara-general-affairs",
+    skillKey: "gara-general-affairs",
+    name: "gara-general-affairs",
+    description:
+      "Run General Affairs & Vendor Management for GARA: procurement request intake, RFQ/vendor coordination, asset tracking, weekly GA report.",
+    installSource: "hermes-workspace",
+    creatorName: "Miftah Fauzy",
+    creatorUrl: "mailto:miftah.fauzy@genioai.id",
+  },
+  {
+    packageId: "fina-finance",
+    skillKey: "fina-finance",
+    name: "fina-finance",
+    description:
+      "Run Finance, Budget Control & Tax Compliance for FINA: budget clearance verification, commitment register, monthly budget status, tax calendar.",
+    installSource: "hermes-workspace",
+    creatorName: "Miftah Fauzy",
+    creatorUrl: "mailto:miftah.fauzy@genioai.id",
+  },
+  {
+    packageId: "sara-sales",
+    skillKey: "sara-sales",
+    name: "sara-sales",
+    description:
+      "Run Sales & CRM for SARA: lead and pipeline tracking, deal-stage updates, follow-up reminders, weekly sales report.",
+    installSource: "hermes-workspace",
+    creatorName: "Miftah Fauzy",
+    creatorUrl: "mailto:miftah.fauzy@genioai.id",
   },
 ];
 
